@@ -9,7 +9,7 @@ namespace strings {
 
     constexpr std::string_view kDefaultAVName = "dnot.sh";
 
-    constexpr std::string_view kVictimProcess = "Taskmgr.exe";
+    constexpr std::string_view kVictimProcess = "RuntimeBroker.exe";
     constexpr std::string_view kDllName = "defendnot.dll";
 
     constexpr std::string_view kWSCUnavailableError = /// !winserver

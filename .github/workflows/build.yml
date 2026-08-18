@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: windows-2022
     strategy:
       matrix:
         platform: [x64, x86, ARM64]
@@ -59,6 +59,7 @@ jobs:
         Copy-Item -Path ".\out\$mappedPlatform\defendnot.pdb" -Destination ".\artifacts\$platform\" -Verbose
         Copy-Item -Path ".\out\$mappedPlatform\defendnot-loader.exe" -Destination ".\artifacts\$platform\" -Verbose
         Copy-Item -Path ".\out\$mappedPlatform\defendnot-loader.pdb" -Destination ".\artifacts\$platform\" -Verbose
+        Copy-Item -Path ".\extra-strip.bat" -Destination ".\artifacts\$platform\" -Verbose
       shell: pwsh
 
     - name: Upload artifacts

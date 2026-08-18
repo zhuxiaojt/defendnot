@@ -65,10 +65,6 @@ namespace {
     }
 
     void banner(const loader::Config& config) {
-        std::println();
-        std::println("thanks for using {}", strings::kProjectName);
-        std::println("please don't forget to leave a star at {}", strings::kRepoUrl);
-
         if (!config.from_autorun && config.alloc_console) {
             system("pause");
         }

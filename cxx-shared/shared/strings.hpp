@@ -4,10 +4,10 @@
 
 namespace strings {
     constexpr std::string_view kProjectName = "defendnot";
-    constexpr std::string_view kRepoUrl = "https://github.com/es3n1n/defendnot";
-    constexpr std::string_view kVersion = "1.6.0";
+    constexpr std::string_view kRepoUrl = "https://github.com/zhuxiaojt/defendnot";
+    constexpr std::string_view kVersion = "1.6.1";
 
-    constexpr std::string_view kDefaultAVName = "dnot.sh";
+    constexpr std::string_view kDefaultAVName = "defendnot";
 
     constexpr std::string_view kVictimProcess = "RuntimeBroker.exe";
     constexpr std::string_view kDllName = "defendnot.dll";
